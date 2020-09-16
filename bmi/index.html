@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> bienvenido al medidor de BMI </h1>
+    
+    <script>
+      let altura = parseFloat(prompt("cual es tu altura"))
+
+let peso = parseFloat(prompt("cual es tu peso corporal"))
+
+let maltura = (altura * altura)
+
+let bmi = (peso / maltura)
+
+document.write(`tu bmi es de ${bmi} `)
+document.write()
+
+if(bmi < 18.5 ){
+  document.write(" estas bajo de peso ")
+}else if(bmi > 18.5 && bmi < 24.9){
+  document.write(" estas en un peso normal ")
+}else if(bmi > 25 && bmi < 29.9) {
+  document.write(" tienes sobrepeso ")
+}else if(bmi >= 30){
+  document.write(" estas obeso ")
+
+}
+document.write()
+document.write(" compara con la tabla segun los 3 primeros numeros de tu BMI como estas ")
+    </script>
+
+<img src="./tabla.jpeg">
+
+
+
+
+</body>
+</html>
